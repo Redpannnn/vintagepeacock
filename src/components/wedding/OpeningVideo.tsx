@@ -60,7 +60,6 @@ export default function OpeningVideo({ active }: OpeningVideoProps) {
         <video
           ref={videoRef}
           src={MEDIA.openingVideo}
-          poster="/poster-slide2.jpg"
           playsInline
           preload="auto"
           muted
