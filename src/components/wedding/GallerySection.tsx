@@ -83,7 +83,7 @@ export default function GallerySection() {
 
         {/* Preview kecil — klik untuk tampil di preview besar */}
         <Reveal delay={0.15}>
-          <div className="mx-auto mt-5 grid w-full max-w-[340px] grid-cols-4 gap-2.5">
+          <div className="mx-auto mt-5 grid w-full max-w-[340px] grid-cols-3 gap-2.5">
             {GALLERY_IMAGES.map((src, i) => (
               <button
                 key={src}
