@@ -57,34 +57,32 @@ export default function CountdownSection() {
   return (
     <section
       id="slide-5"
-      className="relative w-full bg-[#3f6a76]"
-      aria-label="Save the date"
+      className="relative w-full bg-[#39575e]"
+      aria-label="Akad nikah, resepsi, dan save the date"
     >
       <div className="relative w-full">
-        {/* Gambar berisi Akad Nikah, Resepsi, dan judul Save The Date */}
+        {/* Gambar berisi Akad Nikah, Resepsi, dan kotak Save The Date */}
         <img
-          src={MEDIA.event}
+          src={MEDIA.slide5}
           alt="Akad Nikah dan Resepsi — Sabtu, 10 Juli 2027, Pademangan, Jakarta Utara"
           className="block w-full"
           loading="lazy"
         />
 
-        {/* Countdown fungsional yang tepat menutupi kotak pada gambar.
-            Posisi diukur dari gambar asli: kotak dari 85.42% - 94.76% vertikal,
-            kolom dari 6.11% - 93.78% horizontal. */}
-        <Reveal className="absolute left-[6.11%] top-[85.42%] h-[9.34%] w-[87.67%]">
+        {/* Angka countdown yang tepat menutupi kotak kosong pada gambar
+            (label Hari/Jam/Menit/Detik sudah tercetak di gambar).
+            Posisi diukur dari gambar asli 965x2271:
+            kotak dari 85.47% - 94.80% vertikal, kolom dari 6.22% - 93.89% horizontal. */}
+        <Reveal className="absolute left-[6.22%] top-[85.47%] h-[9.33%] w-[87.67%]">
           <div className="grid h-full grid-cols-4 gap-x-[8.5%]">
             {items.map((item) => (
               <div
                 key={item.label}
-                className="flex flex-col items-center justify-center gap-[8%] rounded-[8px] bg-[#b2c1c8] text-white shadow-sm"
+                className="flex items-start justify-center pt-[12%]"
                 aria-label={`${item.value} ${item.label}`}
               >
-                <span className="font-display text-[clamp(17px,5.2vw,26px)] font-semibold leading-none tabular-nums">
+                <span className="font-display text-[clamp(18px,5.6vw,28px)] font-semibold leading-none tabular-nums text-white [text-shadow:0_1px_8px_rgba(57,87,94,0.45)]">
                   {String(item.value).padStart(2, "0")}
-                </span>
-                <span className="font-display text-[clamp(9px,2.9vw,14px)] leading-none">
-                  {item.label}
                 </span>
               </div>
             ))}
