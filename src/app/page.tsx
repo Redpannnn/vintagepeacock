@@ -5,7 +5,6 @@ import CoverOverlay from "@/components/wedding/CoverOverlay";
 import OpeningVideo from "@/components/wedding/OpeningVideo";
 import CountdownSection from "@/components/wedding/CountdownSection";
 import GallerySection from "@/components/wedding/GallerySection";
-import RsvpSection from "@/components/wedding/RsvpSection";
 import MusicPlayer from "@/components/wedding/MusicPlayer";
 import Reveal from "@/components/wedding/Reveal";
 import { MEDIA } from "@/components/wedding/media";
@@ -49,13 +48,13 @@ export default function WeddingInvitation() {
         }}
       />
 
-      {/* Slide 1 — Cover (hilang permanen setelah Open diklik) */}
+      {/* Slide 1 — Cover video (hilang permanen setelah Open diklik) */}
       {!opened && <CoverOverlay onOpen={() => setOpened(true)} />}
 
       {/* Lagu latar — otomatis diputar saat slide 2 tampil, dengan tombol musik melayang */}
       <MusicPlayer active={opened} />
 
-      {/* Konten undangan — slide 2 sampai 9, discroll smooth ke bawah */}
+      {/* Konten undangan — slide 2 sampai 8, discroll smooth ke bawah */}
       <main
         aria-hidden={!opened}
         className="relative mx-auto w-full max-w-[430px] bg-[#f1f1ee] shadow-[0_0_60px_rgba(0,0,0,0.35)]"
@@ -63,15 +62,15 @@ export default function WeddingInvitation() {
         {/* Slide 2 — Video pembuka (berhenti di detik akhir, tidak loop) */}
         <OpeningVideo active={opened} />
 
-        {/* Slide 3 — Kutipan QS. Ar-Rum: 21 (seukuran gambar saja) */}
+        {/* Slide 3 — Kutipan QS. Ar-Rum: 21 */}
         <section
           id="slide-3"
-          className="w-full bg-[#406673]"
+          className="w-full bg-[#39575e]"
           aria-label="Kutipan QS Ar-Rum ayat 21"
         >
           <Reveal>
             <img
-              src={MEDIA.quoteArRum}
+              src={MEDIA.slide3}
               alt="Kutipan QS. Ar-Rum ayat 21 tentang tanda kebesaran Allah menciptakan pasangan"
               className="block w-full"
               loading="lazy"
@@ -82,12 +81,12 @@ export default function WeddingInvitation() {
         {/* Slide 4 — Mempelai: Maestro & Farida */}
         <section
           id="slide-4"
-          className="w-full bg-[#e9e4db]"
+          className="w-full bg-[#eceee3]"
           aria-label="Mempelai Maestro dan Farida"
         >
           <Reveal>
             <img
-              src={MEDIA.couples}
+              src={MEDIA.slide4}
               alt="Maestro, putra dari Bapak Arif & Ibu Dewi bersama Farida, putri dari Bapak Anto & Ibu Umi"
               className="block w-full"
               loading="lazy"
@@ -101,12 +100,12 @@ export default function WeddingInvitation() {
         {/* Slide 6 — Our Story */}
         <section
           id="slide-6"
-          className="w-full bg-[#d9d7c7]"
+          className="w-full bg-[#eceee3]"
           aria-label="Kisah kami"
         >
           <Reveal>
             <img
-              src={MEDIA.story}
+              src={MEDIA.slide6}
               alt="Our Story — awal bertamu, komitmen, dan lamaran Maestro & Farida"
               className="block w-full"
               loading="lazy"
@@ -117,33 +116,20 @@ export default function WeddingInvitation() {
         {/* Slide 7 — Our Gallery */}
         <GallerySection />
 
-        {/* Slide 8 — RSVP & Ucapan */}
-        <RsvpSection />
-
-        {/* Slide 9 — Penutup */}
+        {/* Slide 8 — Penutup */}
         <section
-          id="slide-9"
-          className="w-full bg-[#39575e]"
+          id="slide-8"
+          className="w-full bg-[#eceee3]"
           aria-label="Penutup undangan"
         >
-          <div className="relative w-full">
-            <Reveal>
-              <img
-                src={MEDIA.closing}
-                alt="Foto Maestro & Farida di hadapan candi dengan ucapan terima kasih"
-                className="block w-full"
-                loading="lazy"
-              />
-            </Reveal>
-
-            {/* Tulisan kecil di dalam blok warna teal di bawah gambar
-                (blok mulai pada 87.98% tinggi gambar) */}
-            <Reveal className="absolute inset-x-0 bottom-0 top-[87.98%] flex items-center justify-center">
-              <p className="font-script text-[clamp(18px,5.5vw,26px)] leading-none text-white [text-shadow:0_1px_6px_rgba(0,0,0,0.2)]">
-                Celebrete with Memoraa
-              </p>
-            </Reveal>
-          </div>
+          <Reveal>
+            <img
+              src={MEDIA.slide8}
+              alt="Foto Maestro & Farida dengan ucapan terima kasih dan kesan serta pesan"
+              className="block w-full"
+              loading="lazy"
+            />
+          </Reveal>
         </section>
       </main>
     </div>
