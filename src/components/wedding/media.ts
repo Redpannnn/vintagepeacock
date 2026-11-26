@@ -1,28 +1,28 @@
-// Media & data konstanta untuk undangan pernikahan Maestro & Farida
+// Media & data konstanta untuk undangan pernikahan Hengky & Sindi
 // Tema: Vintage Peacock
 
 export const MEDIA = {
   // Slide 1 — video cover (tampil sebelum tombol Open diklik)
   coverVideo:
-    "https://ik.imagekit.io/au8q7zdvt/SLIDE%201%20Vintage%20Peacock.mp4",
+    "https://ik.imagekit.io/au8q7zdvt/VINTAGE%20PEACOCK/HENGKY&SINDI/HENGSIN%20SLIDE%201.mp4?updatedAt=1795661851947",
   // Slide 2 — video pembuka (ditampilkan setelah undangan dibuka)
   openingVideo:
-    "https://ik.imagekit.io/au8q7zdvt/SLIDE%202%20Vintage%20Peacock.mp4?tr=q-70",
+    "https://ik.imagekit.io/au8q7zdvt/VINTAGE%20PEACOCK/HENGKY&SINDI/HENGSIN%20SLIDE%202.mp4?updatedAt=1795661856591",
   // Slide 3 — kutipan QS. Ar-Rum: 21
   slide3:
     "https://ik.imagekit.io/au8q7zdvt/SLIDE%203%20Vintage%20Peacock.jpg",
   // Slide 4 — profil mempelai
   slide4:
-    "https://ik.imagekit.io/au8q7zdvt/SLIDE%204%20Vintage%20Peacock.jpg",
+    "https://ik.imagekit.io/au8q7zdvt/VINTAGE%20PEACOCK/HENGKY&SINDI/HENGSIN%20SLIDE%204.jpg?updatedAt=1795661850756",
   // Slide 5 — Akad Nikah, Resepsi & Save The Date (kotak countdown diisi overlay)
   slide5:
-    "https://ik.imagekit.io/au8q7zdvt/SLIDE%205%20Vintage%20Peacock.jpg",
-  // Slide 6 — Our Story
-  slide6:
-    "https://ik.imagekit.io/au8q7zdvt/SLIDE%206%20Vintage%20Peacock.jpg",
-  // Slide 8 — penutup / terima kasih
-  slide8:
-    "https://ik.imagekit.io/au8q7zdvt/SLIDE%208%20Vintage%20Peacock.jpg?updatedAt=1795636648930",
+    "https://ik.imagekit.io/au8q7zdvt/VINTAGE%20PEACOCK/HENGKY&SINDI/HENGSIN%20SLIDE%205.jpg?updatedAt=1795661849133",
+  // Slide 10 — penutup / terima kasih
+  slide10:
+    "https://ik.imagekit.io/au8q7zdvt/VINTAGE%20PEACOCK/HENGKY&SINDI/HENGSIN%20SLIDE%2010.jpg?updatedAt=1795661850021",
+  // Slide Gift — wallpaper cover card amplop digital
+  giftWallpaper:
+    "https://ik.imagekit.io/au8q7zdvt/Vintage%20Peacock%20Wallpaper.jpg",
   // Latar dekoratif di luar kolom undangan (desktop)
   artBg: "https://undanganlink.id/assets/wekita/vintage-01/images/art-bg.webp",
   // Dipakai komponen legacy (tidak tampil di halaman utama)
@@ -30,13 +30,20 @@ export const MEDIA = {
     "https://undanganlink.id/assets/wekita/vintage-01/images/section-wish.webp",
 } as const;
 
+// Slide Gift — data amplop digital
+export const GIFT = {
+  bank: "Dana",
+  accountNumber: "085709298968",
+  accountName: "Hengky Kurniawan",
+} as const;
+
 // Slide 7 — Our Gallery (5 foto; klik thumbnail untuk menampilkan di preview besar)
 export const GALLERY_IMAGES = [
-  "https://inv.punakawandigital.id/wp-content/uploads/2026/06/44-1-1.jpg",
-  "https://inv.punakawandigital.id/wp-content/uploads/2026/06/44-2-2.jpg",
-  "https://inv.punakawandigital.id/wp-content/uploads/2026/06/44-3-2.jpg",
-  "https://inv.punakawandigital.id/wp-content/uploads/2026/06/44-4-e1689578017594-1.jpg",
-  "https://inv.punakawandigital.id/wp-content/uploads/2026/06/44-6-1.jpg",
+  "https://ik.imagekit.io/au8q7zdvt/VINTAGE%20PEACOCK/HENGKY&SINDI/HENGSIN%205.jpg?updatedAt=1795660939128",
+  "https://ik.imagekit.io/au8q7zdvt/VINTAGE%20PEACOCK/HENGKY&SINDI/HENGSIN%202.jpg?updatedAt=1795660939062",
+  "https://ik.imagekit.io/au8q7zdvt/VINTAGE%20PEACOCK/HENGKY&SINDI/HENGSIN%203.jpg?updatedAt=1795660939174",
+  "https://ik.imagekit.io/au8q7zdvt/VINTAGE%20PEACOCK/HENGKY&SINDI/HENGSIN%204.jpg?updatedAt=1795660939292",
+  "https://ik.imagekit.io/au8q7zdvt/VINTAGE%20PEACOCK/HENGKY&SINDI/HENGSIN%204.jpg?updatedAt=1795660939292",
 ] as const;
 
 // Akad Nikah: Sabtu, 10 Juli 2027 Pukul 08.00 WIB
