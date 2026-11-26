@@ -4,10 +4,10 @@
 export const MEDIA = {
   // Slide 1 — video cover (tampil sebelum tombol Open diklik)
   coverVideo:
-    "https://ik.imagekit.io/au8q7zdvt/VINTAGE%20PEACOCK/HENGKY&SINDI/HENGSIN%20SLIDE%201.mp4?updatedAt=1795661851947",
+    "https://ik.imagekit.io/au8q7zdvt/SLIDE%201%20Vintage%20Peacock.mp4?updatedAt=1795636099592",
   // Slide 2 — video pembuka (ditampilkan setelah undangan dibuka)
   openingVideo:
-    "https://ik.imagekit.io/au8q7zdvt/VINTAGE%20PEACOCK/HENGKY&SINDI/HENGSIN%20SLIDE%202.mp4?updatedAt=1795661856591",
+    "https://ik.imagekit.io/au8q7zdvt/SLIDE%202%20Vintage%20Peacock.mp4?updatedAt=1795636104770",
   // Slide 3 — kutipan QS. Ar-Rum: 21
   slide3:
     "https://ik.imagekit.io/au8q7zdvt/SLIDE%203%20Vintage%20Peacock.jpg",
